@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+		android:id="@+id/gotolist"
+		android:icon="@drawable/ic_menu_sort_by_size" android:title="@string/gotolist_label" android:alphabeticShortcut="@string/gotolist_shortcut"/>
+		
+	<item 
+		android:id="@+id/maprefresh" 
+		android:icon="@drawable/ic_menu_refresh" android:title="@string/refresh_label" android:alphabeticShortcut="@string/refresh_shortcut"/>
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="30dip"
+		android:gravity="center_vertical"
+		android:background="@color/titleBackground" >
+		
+		<ImageView
+		android:layout_height="26dip"
+		android:layout_width="wrap_content"
+		android:src="@drawable/storageroom" />
+		
+		<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_weight="1"
+		android:text="@string/activityTitleList"
+		android:textSize="20dip"
+		android:textStyle="bold"
+		android:textColor="@color/titleText" />
+		
+		<ProgressBar
+    	android:id="@+id/progress_list"
+    	android:layout_width="20dip"
+    	android:layout_height="20dip"
+    	android:paddingRight="2dip"
+    	android:visibility="invisible"
+    	android:tag="progress"
+    	style="?android:attr/progressBarStyleSmallInverse" />
+    	
+	</LinearLayout>   
+    <ListView
+    	android:id="@+id/restaurants_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+    <LinearLayout
+		android:id="@+id/announcement_view"
+    	android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="5dip"
+		android:background="@color/announcement_background" >
+		    
+		<TextView
+			android:id="@+id/announcement_text"
+			android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:autoLink="all" />
+		<ImageView
+			android:id="@+id/announcement_close"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:src="@drawable/close"
+			android:clickable="true" />
+			
+    </LinearLayout>          
+</LinearLayout>

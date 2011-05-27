@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<color name="titleBackground">#555555</color>
+	<color name="titleText">#BBBBBB</color>
+	<color name="detailitem_labeltext">#33627C</color>
+	<color name="detailitem_background">#EEEEEE</color>
+	<color name="detailitem_frame">#33627C</color>
+	<color name="announcement_background">#CCCCCC</color>
+
+</resources>

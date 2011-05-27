@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- General -->
+    <string name="app_name">StorageRoom Example</string>
+    <string name="activityTitleDetails">Restaurant - Details</string>
+    <string name="activityTitleList">Restaurants - List</string>
+    <string name="activityTitleMap">Restaurants - Map</string>
+    
+    <!-- Widgets -->
+    <string name="address_label">Address</string>
+    <string name="website_label">Website</string>
+    <string name="lastvisit_label">Last visit</string>
+    <string name="pricerange_label">Price range</string>
+    <string name="rating_label">Rating</string>
+    <string name="vegetarianmenu_text">Vegetarian Menu?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    
+    <!-- Menu -->
+    <string name="gotomap_label">Map</string>
+    <string name="gotomap_shortcut">m</string>
+    <string name="gotolist_label">List</string>
+    <string name="gotolist_shortcut">l</string>
+    <string name="refresh_label">Refresh</string>
+    <string name="refresh_shortcut">r</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="cancel_shortcut">c</string>
+    
+    <!-- Notifications -->
+    <string name="toastInsertSingle">item was loaded successfully!</string>
+    <string name="toastInsertMultiple">items were loaded successfully!</string>
+    <string name="progressDialogMessage">Loading. Please wait...</string>
+    
+    <!-- Errors -->    
+    <string name="error_webException">Connection to Web-Server could not be established!</string>
+    <string name="error_jsonException">JSON-file could not be parsed!</string>
+    <string name="error_sqliteException">Database could not be accessed!</string>
+    <string name="error_sqlException">Database entries could not be read!</string>
+    <string name="error_columnMissingException">Attribute of Database Entry missing!</string>
+    <string name="error_asyncTaskExecuteException">Task cannot be executed!</string>
+    <string name="error_unknown">An error has occured</string>
+      
+</resources>
