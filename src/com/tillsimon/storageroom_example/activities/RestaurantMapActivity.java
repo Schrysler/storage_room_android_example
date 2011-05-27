@@ -144,7 +144,9 @@ public class RestaurantMapActivity extends MapActivity implements RestaurantsDow
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch (item.getItemId()) {
 	    	case R.id.gotolist:
-	    		startActivity(new Intent(this,RestaurantListViewActivity.class));
+	    		Intent intent = new Intent(this,RestaurantListViewActivity.class);
+	    		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	    		startActivity(intent);
 	    		return true;
 	    	case R.id.maprefresh:
 	    		if (mRestaurantsDownloader==null) {

@@ -106,7 +106,7 @@ public class RestaurantListViewActivity extends Activity implements OnItemClickL
 	protected void onResume() {
 		super.onResume();
 		loadRestaurantsToListView();
-		Log.d(AppConfigInterface.TAG, "onStart");
+		Log.d(AppConfigInterface.TAG, "onResume");
 	}
 
 	@Override
@@ -145,7 +145,9 @@ public class RestaurantListViewActivity extends Activity implements OnItemClickL
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch (item.getItemId()) {
 	    	case R.id.gotomap:
-	    		startActivity(new Intent(this,RestaurantMapActivity.class));
+	    		Intent intent = new Intent(this,RestaurantMapActivity.class);
+	    		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	    		startActivity(intent);
 	    		return true;
 	    	case R.id.listrefresh:
 	    		if (mRestaurantsDownloader==null) {
@@ -211,6 +213,7 @@ public class RestaurantListViewActivity extends Activity implements OnItemClickL
 
 	@Override
 	public void onRestaurantDownloadSuccess(RestaurantsDownloader downloader, Integer numberOfLoadedItems) {
+		Log.d(AppConfigInterface.TAG,"onSuccess");
 		String toastSuccessMessage;
 		
 		mRestaurantsDownloader = null;
@@ -223,7 +226,7 @@ public class RestaurantListViewActivity extends Activity implements OnItemClickL
 		Toast.makeText(this, toastSuccessMessage, Toast.LENGTH_LONG).show();
 		mDownloadProgressDialog.dismiss();
 		mCursor.requery();
-		mSimpleCursorAdapter.notifyDataSetChanged();
+		mThumbnailAdapter.notifyDataSetChanged();
 	}
 
 	@Override
