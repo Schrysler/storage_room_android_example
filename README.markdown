@@ -4,8 +4,8 @@ This is an Android example on how to use the StorageRoom API ( <http://storagero
 
 Find the code for the actual JSON parsing from the StorageRoom API in  
 
-+ RestaurantsDownloader.java -> downloadRestaurants() { ... }
-+ AnnouncementsDownloader.java -> downloadAnnouncements() { ... }
++ model / webconnect / RestaurantsDownloader.java -> downloadRestaurants() { ... }
++ model / webconnect / AnnouncementsDownloader.java -> downloadAnnouncements() { ... }
 
 
 ## Basics
