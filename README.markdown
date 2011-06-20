@@ -8,6 +8,12 @@ Find the code for the actual JSON parsing from the StorageRoom API in
 + model / webconnect / AnnouncementsDownloader.java -> downloadAnnouncements() { ... }
 
 **To get Google Maps working on your device, insert your own Google Maps API Key in res/layout/restaurantsmap.xml !** 
+
+## Screenshots
+
+[![](http://farm4.static.flickr.com/3057/5852900499_bb292d6fb8.jpg)](http://farm4.static.flickr.com/3057/5852900499_bb292d6fb8.jpg)
+[![](http://farm4.static.flickr.com/3074/5852899963_8da71c437d.jpg)](http://farm4.static.flickr.com/3074/5852899963_8da71c437d.jpg)
+[![](http://farm3.static.flickr.com/2513/5853454018_f50fb092f1.jpg)](http://farm3.static.flickr.com/2513/5853454018_f50fb092f1.jpg)
 	
 
 ## Basics
