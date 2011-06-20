@@ -11,9 +11,9 @@ Find the code for the actual JSON parsing from the StorageRoom API in
 
 ## Screenshots
 
-<img src="http://farm4.static.flickr.com/3057/5852900499_bb292d6fb8.jpg" width="216" height="360">
-<img src="http://farm4.static.flickr.com/3074/5852899963_8da71c437d.jpg" width="216" height="360">
-<img src="http://farm3.static.flickr.com/2513/5853454018_f50fb092f1.jpg" width="216" height="360">
+<img src="http://farm4.static.flickr.com/3057/5852900499_bb292d6fb8.jpg" width="216" height="360"> &nbsp;&nbsp;&nbsp;
+<img src="http://farm4.static.flickr.com/3074/5852899963_8da71c437d.jpg" width="216" height="360"> &nbsp;&nbsp;&nbsp;
+<img src="http://farm3.static.flickr.com/2513/5853454018_f50fb092f1.jpg" width="216" height="360"> &nbsp;&nbsp;&nbsp;
 
 ## Basics
 
