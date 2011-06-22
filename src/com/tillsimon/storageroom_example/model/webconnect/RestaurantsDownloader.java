@@ -134,9 +134,9 @@ public class RestaurantsDownloader extends AsyncTask<Void, Integer, Boolean> {
 					precompiledDbInsertStatement.bindLong(9, restaurantsJsonArrayEntry.getInt("stars"));
 					precompiledDbInsertStatement.bindString(10, String.valueOf(restaurantsJsonArrayEntry.getBoolean("vegetarian_menu")));
 					JSONObject restaurantImageJsonObject = restaurantsJsonArrayEntry.getJSONObject("image");
-					precompiledDbInsertStatement.bindString(11, restaurantImageJsonObject.getString("url"));
+					precompiledDbInsertStatement.bindString(11, restaurantImageJsonObject.getString("@url"));
 					JSONObject restaurantImagePreviewJsonObject = restaurantsJsonArrayEntry.getJSONObject("preview_image");
-					precompiledDbInsertStatement.bindString(12, restaurantImagePreviewJsonObject.getString("url"));
+					precompiledDbInsertStatement.bindString(12, restaurantImagePreviewJsonObject.getString("@url"));
 					precompiledDbInsertStatement.bindString(13, restaurantsJsonArrayEntry.getString("@created_at"));
 					
 					long rowIdOfDbInsert = precompiledDbInsertStatement.executeInsert();
@@ -147,7 +147,6 @@ public class RestaurantsDownloader extends AsyncTask<Void, Integer, Boolean> {
 	            
 	        }
         	catch (Exception e) {
-	        	mDelegate.onRestaurantDownloadFailure(this, e);
 	        	mThrownException = e;
 	        	return false;
 			}

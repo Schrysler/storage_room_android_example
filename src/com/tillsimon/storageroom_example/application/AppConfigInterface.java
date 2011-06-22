@@ -16,10 +16,9 @@ public interface AppConfigInterface {
 	
 	public static final String COLLECTIONS_ID_ANNOUNCEMENTS = "collections/4d96091dba0561733300001b/";
 	public static final String PARAM_ANNOUNCEMENTS_PERPAGE = "&per_page=1";
-	public static final String PARAM_ANNOUNCEMENTS_SORT = "&sort=updated_at";
+	public static final String PARAM_ANNOUNCEMENTS_SORT = "&sort=@updated_at";
 	public static final String PARAM_ANNOUNCEMENTS_ORDER = "&order=desc";
 	public static final String STORAGEROOM_ANNOUNCEMENTS_URL = BASE_URL + ACCOUNT_ID + COLLECTIONS_ID_ANNOUNCEMENTS + JSON_FILENAME + PARAM_AUTH_TOKEN + PARAM_ANNOUNCEMENTS_PERPAGE + PARAM_ANNOUNCEMENTS_SORT + PARAM_ANNOUNCEMENTS_ORDER;
-	
 	public static final int timeoutConnection = 5000;
 	public static final int timeoutSocket = 5000;
 	public static final int initialMapZoom = 3;

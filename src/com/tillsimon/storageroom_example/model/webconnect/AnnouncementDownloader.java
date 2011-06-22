@@ -111,7 +111,7 @@ public class AnnouncementDownloader extends AsyncTask<Void, Integer, Boolean> {
 				JSONArray announcementsJsonArray = announcementsJsonArrayObject.getJSONArray("resources");					
 				JSONObject announcementsJsonArrayEntry = announcementsJsonArray.getJSONObject(0);
 				mAnnouncementText = announcementsJsonArrayEntry.getString("text");
-				mAnnouncementUrl = announcementsJsonArrayEntry.getString("url");
+				mAnnouncementUrl = announcementsJsonArrayEntry.getString("link");
 	        }
         	catch (Exception e) {
 	        	mThrownException = e;

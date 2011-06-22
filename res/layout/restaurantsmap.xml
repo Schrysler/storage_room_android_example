@@ -44,6 +44,6 @@
 	android:layout_width="fill_parent"
 	android:layout_height="wrap_content"
 	android:clickable="true"
-	android:apiKey="0G4UtdjHbaMPPz_fLT0kkhcrL42Eph78uGySaqw"/> 
+	android:apiKey=""/> 
 	
 </LinearLayout>
